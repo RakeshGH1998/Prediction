@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <p class="h1"><span>Prediction</span> Pursuit</p>
+    <hr>
+    <p class="h5">"Unlock the secrets of numbers and become the master predictor in our thrilling game, where every guess counts and every number holds a mystery to unravel Pursuit"</p>
+
+
+
+
+    <!-- <p id="h1">Welcome to the game</p> -->
+    <form action="play.html" method="post">
+        <label for="name">Enter <span>Your Name:</span></label>
+        <input type="text" id="name">
+        <button type="submit" onclick="saveData()">Get Start</button>
+    </form>
+
+    <script>
+        function saveData() {
+        var userName = document.getElementById("name").value;
+        localStorage.setItem("name", userName);
+        window.location.href = "play.html";
+}
+    </script>
+</body>
+</html>

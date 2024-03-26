@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="play.css">
+    <script src="play.js"></script>
+    
+</head>
+<body>
+
+    <p class="h1"><span>Prediction</span> Pursuit</p>
+    <hr>
+    <p class="h5" id="welcome"></p>
+    
+
+    <div class="form-container">
+        <h2>Predict the Number from 1 to 10</h2>
+        <div class="form-group">
+            <label for="text">Predict the Number:</label>
+            <input type="text" id="user_number" name="user_number" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" onclick="check()">Submit</button>
+        </div>
+        <form action="play.html">
+            <div class="form-group">
+                <button type="submit">Start</button>
+            </div>
+        </form>
+    </div>
+    <p class="h2" id="output"><span></span></p>
+    <p class="h3" id="choice_left"><span></span></p>
+    
+    <script>
+        var user_name = localStorage.getItem("name");
+        document.getElementById("welcome").innerText = "Hey "+user_name + " Welcome to the Game";;
+    </script>
+
+</body>
+</html>
