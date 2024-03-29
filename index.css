@@ -149,3 +149,27 @@ button[type="submit"] {
 button[type="submit"]:hover {
     opacity: 0.8;
 }
+
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: -4%;
+}
+footer ul li{
+   padding: 30px;
+}
+i{
+    font-size: 35px;
+    color: white;
+    transition: transsform .4s;
+}
+i:hover{
+    color: #f9004d;
+    transform: scale(1.6);
+}
